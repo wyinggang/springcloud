@@ -1,0 +1,38 @@
+server:
+  port: 8002
+  tomcat:
+    uri-encoding: utf-8
+
+spring:
+  application:
+    name: cloud-payment-service
+
+  datasource:
+    # 当前数据源操作类型
+    type: com.alibaba.druid.pool.DruidDataSource
+    # mysql驱动类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/com.wyg.springcloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+mybatis:
+  #      mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.wyg.com.wyg.springcloud.entities
+  configuration:
+    map-underscore-to-camel-case: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #注册中心地址
+  instance:
+    instance-id: payment8002 #修改服务主机在eureka是哪个的名称与ip显示
+    prefer-ip-address: true
+    #eureka客户端向服务端发送心跳时间间隔，单位为 s
+    lease-renewal-interval-in-seconds: 30
+    #eureka客户端最后一次向服务端发送心跳时间间隔，超过这个间隔将会被剔除，
+    #（当enable eureka自我保护机制时（在服务端开启eureka.server.enable-self-preservation = true），
+    #90s内丢失大量服务实例心跳时会启动自我保护机制（就算对应服务关闭/故障，任然不剔除））
+    lease-expiration-duration-in-seconds: 90

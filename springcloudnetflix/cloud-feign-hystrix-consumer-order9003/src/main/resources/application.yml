@@ -1,0 +1,61 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: cloud-order-service
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #注册中心地址
+
+
+logging:
+  level:
+    #feign日志以什么级别监控哪个接口
+    com.wyg.springcloud.feignService.FeignPaymentService: debug
+
+feign:
+  hystrix:
+    enabled: true
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true  #关闭 /开启hystrix超时
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000  #hystrix超时时间
+
+
+#设置feign客户端的超时时间（openfeign默认支持ribbon）
+ribbon:
+      #建立连接所用时间5s
+      ReadTimeout:  5000
+      #建立连接后从服务端读取到可用资源的时间5s
+      ConnectTimeout: 5000
+
+      MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用，默认为 1s
+      MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+      OkToRetryOnAllOperations: false  #是否所有操作(只有get请求会重试)都重试，如果改为true则put，post等请求都会进行重试，如果接口未进行幂等处理会出现问题
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #修改负载均衡算法--也可以使用代码方式
+
+        #  @Bean
+        #  public IRule loadBalancer(){
+        #  return new AvailabilityFilteringRule();
+        #}
+
+#ribbon 和 hystrix默认超时时间都为 1s ，
+
+#ribbon重试的次数：MaxAutoRetries + MaxAutoRetriesNextServer + (MaxAutoRetries * MaxAutoRetriesNextServer)
+
+#hystrix超时时间的计算： (1 + MaxAutoRetries + MaxAutoRetriesNextServer) * ReadTimeout
+
+#如果在重试期间，时间超过了hystrix的超时时间，便会立即执行熔断，fallback。
+#所以要根据上面配置的参数计算hystrix的超时时间，使得在重试期间不能达到hystrix的超时时间，不然重试机制就会没有意义

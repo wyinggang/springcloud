@@ -1,0 +1,39 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #分支名称
+      name: application  #配置文件名称
+      profile: dev  #读取后缀名称
+      #即:读取master分支application.dev.yml配置文件---->http://localhost:3344/master/application.dev.yml
+      uri: http://localhost:3344 #配置中心地址
+      #rabbitmq相关配置，注意对齐，是spring下的
+  rabbitmq:
+     host: localhost
+     port: 5672
+     username: guest
+     password: guest
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #注册中心地址
+
+#暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#注意这样配置后还需要在github上更新后，请求http://localhost:3355/actuator/refresh接口，这样在3355上就可以不用重启获取最新配置
+#手动刷新(curl -X POST "http://localhost:3355/actuator/refresh")
+#如果有很多个配置中心客户端，会需要手动刷新多次，-----> 引入消息总线
+
+
