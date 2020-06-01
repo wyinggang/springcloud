@@ -31,8 +31,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
-
+        include: '*'
 #注意这样配置后还需要在github上更新后，请求http://localhost:3355/actuator/refresh接口，这样在3355上就可以不用重启获取最新配置
 #手动刷新(curl -X POST "http://localhost:3355/actuator/refresh")
 #如果有很多个配置中心客户端，会需要手动刷新多次，-----> 引入消息总线

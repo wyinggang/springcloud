@@ -19,6 +19,7 @@ spring:
 
   #rabbitmq相关配置，注意对齐，属于spring下的,引入spring cloud bus 与 rabbitmq 相关jar包，配置后，
   #就可以在更新github后，通过 curl -X POST "http://localhost:3344/actuator/bus-refresh" 通知config-server，让所有config-client更新配置
+  #curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355" 通过指定服务名和端口定点通知对应服务刷新配置
   rabbitmq:
       host: localhost
       port: 5672
