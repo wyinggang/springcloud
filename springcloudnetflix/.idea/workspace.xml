@@ -1,56 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02c84095-4c0b-4dec-925b-030434446340" name="Default Changelist" comment="333">
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/cloud-stream-rabbitmq-consumer8802.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java/com/wyg/springcloud/StreamMQMain8802.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java/com/wyg/springcloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/cloud-stream-rabbitmq-consumer8803.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java/com/wyg/springcloud/StreamMQMain8803.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java/com/wyg/springcloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/cloud-stream-rabbitmq-provider8801.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wyg/springcloud/StreamMQMain8801.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wyg/springcloud/controller/SendMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wyg/springcloud/service/MessageProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wyg/springcloud/service/impl/MessageProviderImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="02c84095-4c0b-4dec-925b-030434446340" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-api-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-api-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client-3355/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client-3366/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-client-3366/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client-3366/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-client-3366/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consul-consumer-order9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consul-consumer-order9001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consul-provider8003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consul-provider8003/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consul-provider8003/src/main/java/com/wyg/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consul-provider8003/src/main/java/com/wyg/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order9000/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order9000/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order9000/src/main/java/com/wyg/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order9000/src/main/java/com/wyg/springcloud/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-order9000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order9000/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign-consumer-order9002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign-consumer-order9002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-feign-hystrix-consumer-order9003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign-hystrix-consumer-order9003/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway-gateway9527/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway-gateway9527/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-hystrix-dashboard-consumer6001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-hystrix-dashboard-consumer6001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-hystrix-provider-payment8004/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-hystrix-provider-payment8004/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-hystrix-provider-payment8004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-hystrix-provider-payment8004/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wyg/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/java/com/wyg/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/mapper/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment-8001/src/main/resources/mapper/PaymentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-feign-hystrix-consumer-order9003/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-feign-hystrix-consumer-order9003/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +330,15 @@
       <workItem from="1590385190526" duration="9178000" />
       <workItem from="1590460773031" duration="110000" />
       <workItem from="1590631825922" duration="2206000" />
-      <workItem from="1590998513101" duration="216000" />
+      <workItem from="1590998513101" duration="328000" />
+      <workItem from="1591000607010" duration="1773000" />
+      <workItem from="1591060208505" duration="778000" />
+      <workItem from="1591068587596" duration="19000" />
+      <workItem from="1591155674727" duration="1232000" />
+      <workItem from="1591170687751" duration="35000" />
+      <workItem from="1592530721416" duration="3784000" />
+      <workItem from="1592874300947" duration="297000" />
+      <workItem from="1592905482473" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1589450524192</created>
@@ -386,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589450524192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="333">
+      <created>1590998807875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590998807875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,7 +363,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="111" />
     <MESSAGE value="222" />
-    <option name="LAST_COMMIT_MESSAGE" value="222" />
+    <MESSAGE value="333" />
+    <option name="LAST_COMMIT_MESSAGE" value="333" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1590377747043">
@@ -438,18 +407,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="407" y="271" width="854" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1590051573989" />
-    <state x="210" y="5" key="CommitChangelistDialog2" timestamp="1590998650260">
+    <state x="210" y="5" key="CommitChangelistDialog2" timestamp="1590998799614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="210" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590998650260" />
+    <state x="210" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1590998799614" />
     <state x="210" y="71" key="DiffContextDialog" timestamp="1590998649686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="210" y="71" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1590998649686" />
-    <state x="194" y="101" key="FileChooserDialogImpl" timestamp="1590386246466">
+    <state x="194" y="101" key="FileChooserDialogImpl" timestamp="1592560009652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="194" y="101" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590386246466" />
+    <state x="194" y="101" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592560009652" />
     <state x="618" y="346" key="Github.Dialog.Accounts.Choose" timestamp="1589450535506">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -486,10 +455,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1140" height="267" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590397000706" />
-    <state x="141" y="98" key="NewModule_or_Project.wizard" timestamp="1590032186288">
+    <state x="141" y="98" key="NewModule_or_Project.wizard" timestamp="1592560011667">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="141" y="98" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1590032186288" />
+    <state x="141" y="98" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1592560011667" />
     <state x="349" y="78" key="Registry" timestamp="1589855171310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -502,10 +471,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="343" y="137" key="SpringBootCustomization/0.0.1536.824@0.0.1536.824" timestamp="1590385506589" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1590141726946">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1590998809876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590141726946" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1590998809876" />
     <state x="429" y="170" key="chooseDestDirectoryDialog" timestamp="1589941925492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -514,6 +483,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="145" width="824" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1590028966098" />
+    <state x="462" y="204" key="git4idea.merge.GitPullDialog" timestamp="1592982480168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="462" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1592982480168" />
     <state x="235" y="85" width="1180" height="594" key="new project wizard" timestamp="1590396545089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
